@@ -12,7 +12,7 @@ export class SubjectController {
       return res.status(201).json(newSubject);
     } catch (error) {
       console.log(error);
-      return res.status(500).json({ message: 'Internal Server Erro' });
+      return res.status(500).json({ message: 'Internal Server Error' });
     }
   }
 }
