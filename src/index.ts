@@ -5,8 +5,6 @@ AppDataSource.initialize()
   .then(() => {
     const app = express();
     app.use(express.json());
-    app.get('/', (req, res) => {
-    });
 
     const port = process.env.PORT as number | undefined;
     app.listen(port, () =>
